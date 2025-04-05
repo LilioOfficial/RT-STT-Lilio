@@ -1,0 +1,7 @@
+services:
+  python-app:
+    build: .
+    container_name: python-stt-mistral
+    volumes:
+      - .:/app
+    command: python main.py
